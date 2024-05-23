@@ -14,4 +14,4 @@ I use Orca Slicer and there I started from the included Ender 3 V2 profile and m
 - changed flaver from marlin to klipper (duh!)
 - first and last gdcode `PRINT_START EXTRUDER=[nozzle_temperature_initial_layer] BED=[bed_temperature_initial_layer_single]` / `PRINT_END`
 - Motion ability:
-  ![Description](https://imgur.com/a/zJBHv8B)
+  ![Description](https://i.imgur.com/GWsd8SC.png)
