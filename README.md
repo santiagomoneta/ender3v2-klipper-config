@@ -1,13 +1,17 @@
 # Ender 3 v2 Klipper config
 
-This is the `printer.cfg` im using with my Creality ender 3 v2 with the following mods:
+These are the latest files I'm using with my Creality Ender 3 v2 with the following, config impact mods:
 - Direct Drive Mount
 - Dual gear extruder
 
 ---
 
-I followed [this](https://www.youtube.com/watch?v=eOURi14SuO0&t=2810s&ab_channel=VictorBared) guide to install Klipper on a `Raspberry Pi 2b` and here are some notes:
-- The `START_PRINT` macro load the **default** besh mesh, make sure it exists.
-- The values for `z_offset` works on my printer, make sure you re calibrate with `PROBE_CALIBRATE` command
-- The values for the `rotation_distance` (eSteps) work on my dual gear extruder, make sure you re calibrate it following [this](https://www.youtube.com/watch?v=8CT9xR3Itks&t=303s&ab_channel=JoePrints) guide.
+After following teh Ellis Tune guide I saw that I could set the max_accel up to 14K! but since I print detailed model I leaned to quality over speed and set the value to 2000
 
+---
+
+I use Orca Slicer and there I started from the included Ender 3 V2 profile and modified the following:
+- changed flaver from marlin to klipper (duh!)
+- first and last gdcode `PRINT_START EXTRUDER=[nozzle_temperature_initial_layer] BED=[bed_temperature_initial_layer_single]` / `PRINT_END`
+- Motion ability:
+  ![Description](https://imgur.com/a/zJBHv8B)
